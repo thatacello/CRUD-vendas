@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SelesRecords\\GroupingSearch.cshtml",
+      "TargetPath": "Views\\SelesRecords\\GroupingSearch.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14434,6 +14439,11 @@
     {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SelesRecords\\SimpleSearch.cshtml",
+      "TargetPath": "Views\\SelesRecords\\SimpleSearch.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14469,6 +14479,11 @@
     {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SelesRecords\\Index.cshtml",
+      "TargetPath": "Views\\SelesRecords\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
