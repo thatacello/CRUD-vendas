@@ -99,6 +99,6 @@ C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof N
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Delete.cshtml.g.cs
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Details.cshtml.g.cs
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Edit.cshtml.g.cs
-C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\SelesRecords\Index.cshtml.g.cs
-C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\SelesRecords\GroupingSearch.cshtml.g.cs
-C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\SelesRecords\SimpleSearch.cshtml.g.cs
+C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\SalesRecords\GroupingSearch.cshtml.g.cs
+C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\SalesRecords\Index.cshtml.g.cs
+C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\SalesRecords\SimpleSearch.cshtml.g.cs
