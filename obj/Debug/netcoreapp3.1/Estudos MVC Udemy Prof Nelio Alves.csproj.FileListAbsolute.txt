@@ -97,3 +97,4 @@ C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof N
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\index.cshtml.g.cs
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Create.cshtml.g.cs
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Delete.cshtml.g.cs
+C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Details.cshtml.g.cs

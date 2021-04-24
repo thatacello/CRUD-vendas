@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Data;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Services
 {
@@ -16,7 +17,7 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Services
         // traz a lista de todos os vendedores
         public List<Seller> FindAll()
         {
-            return _context.Seller.ToList();
+            return _context.Seller.Include(obj => obj.Department).ToList();
         }
         // inserir um novo vendedor no banco de dados
         public void Insert(Seller obj)
