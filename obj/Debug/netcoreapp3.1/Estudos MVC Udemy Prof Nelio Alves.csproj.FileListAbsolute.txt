@@ -94,3 +94,6 @@ C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof N
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\staticwebassets\Estudos MVC Udemy Prof Nelio Alves.StaticWebAssets.xml
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Estudos MVC Udemy Prof Nelio Alves.genruntimeconfig.cache
 C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Departments\Index.cshtml.g.cs
+C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\index.cshtml.g.cs
+C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Create.cshtml.g.cs
+C:\Users\tsci\My Private Documents\Estudos\Udemy\Csharp\Estudos MVC Udemy Prof Nelio Alves\obj\Debug\netcoreapp3.1\Razor\Views\Sellers\Delete.cshtml.g.cs

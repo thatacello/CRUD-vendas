@@ -1,24 +1,24 @@
-using System.Collections.Generic;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Data;
-using Estudos_MVC_Udemy_Prof_Nelio_Alves.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Controllers
 {
     public class DepartmentsController : Controller
     {
-        private readonly ApplicationDbContext _database;
-        public DepartmentsController(ApplicationDbContext database)
+        private readonly ApplicationDbContext _context;
+        public DepartmentsController(ApplicationDbContext context)
         {
-            _database = database;
+            _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Department> list = new List<Department>();
-            list.Add(new Department { Id = 1, Name = "Eletronics" });
-            list.Add(new Department { Id = 2, Name = "Fashion" });
-
-            return View(list);
+            return View(await _context.Department.ToListAsync());
         }
     }
 }

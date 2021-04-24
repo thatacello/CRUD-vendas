@@ -12,6 +12,7 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Models
         public DateTime BirthDate { get; set; }
         public double BaseSalary { get; set; }
         public Department Department { get; set; }
+        public int DepartmentId { get; set; } // avisa pro EF que não pode ser nulo
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
         public Seller()
         {

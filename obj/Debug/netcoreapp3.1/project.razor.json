@@ -14427,6 +14427,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Sellers\\index.cshtml",
+      "TargetPath": "Views\\Sellers\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Sellers\\Create.cshtml",
+      "TargetPath": "Views\\Sellers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14439,6 +14449,11 @@
     {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Sellers\\Delete.cshtml",
+      "TargetPath": "Views\\Sellers\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {

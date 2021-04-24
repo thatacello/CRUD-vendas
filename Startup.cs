@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Data;
+using Estudos_MVC_Udemy_Prof_Nelio_Alves.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -35,15 +36,21 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
            services.AddRazorPages();
+            // ------------------ seeding service-----------------------
+           services.AddScoped<SeedingService>();
+           // ----------------------------------------------------------
+           services.AddScoped<SellerService>();
+           services.AddScoped<DepartmentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider, SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                seedingService.Seed();
             }
             else
             {
