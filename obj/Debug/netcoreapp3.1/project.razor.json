@@ -14402,13 +14402,18 @@
   "RootNamespace": "Estudos_MVC_Udemy_Prof_Nelio_Alves",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Departments\\Index.cshtml",
-      "TargetPath": "Views\\Departments\\Index.cshtml",
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SalesRecords\\Index.cshtml",
+      "TargetPath": "Views\\SalesRecords\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SelesRecords\\GroupingSearch.cshtml",
-      "TargetPath": "Views\\SelesRecords\\GroupingSearch.cshtml",
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Departments\\Delete.cshtml",
+      "TargetPath": "Views\\Departments\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Departments\\Index.cshtml",
+      "TargetPath": "Views\\Departments\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14419,6 +14424,11 @@
     {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SalesRecords\\GroupingSearch.cshtml",
+      "TargetPath": "Views\\SalesRecords\\GroupingSearch.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14442,8 +14452,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SelesRecords\\SimpleSearch.cshtml",
-      "TargetPath": "Views\\SelesRecords\\SimpleSearch.cshtml",
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Departments\\Create.cshtml",
+      "TargetPath": "Views\\Departments\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Departments\\Details.cshtml",
+      "TargetPath": "Views\\Departments\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14467,6 +14482,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SalesRecords\\SimpleSearch.cshtml",
+      "TargetPath": "Views\\SalesRecords\\SimpleSearch.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14477,13 +14497,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Departments\\Edit.cshtml",
+      "TargetPath": "Views\\Departments\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\SelesRecords\\Index.cshtml",
-      "TargetPath": "Views\\SelesRecords\\Index.cshtml",
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {

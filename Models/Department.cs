@@ -23,6 +23,10 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Models
         {
             Sellers.Add(seller);
         }
+        public void RemoveSeller(Seller seller)
+        {
+            Sellers.Remove(seller);
+        }
         public double TotalSales(DateTime initial, DateTime final) // total de vendas
         {
             return Sellers.Sum(s => s.TotalSales(initial, final));

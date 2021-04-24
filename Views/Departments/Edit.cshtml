@@ -1,0 +1,27 @@
+@model Estudos_MVC_Udemy_Prof_Nelio_Alves.Models.ViewModels.DepartmentFormViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Department</h4>
+<hr/>
+@* row -> ocupa a largura da tela *@
+<div class="row">
+    <div class="col-md-4">
+        @* edit do método post *@
+        <form asp-action="Edit">
+            
+            <input type="hidden" asp-for="Department.Id">
+            <div class="form-group">
+                <label asp-for="Department.Name" class="control-label"></label>
+                <input asp-for="Department.Name" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-outline-warning">
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+@model Estudos_MVC_Udemy_Prof_Nelio_Alves.Models.Department
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>Department</h4>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+    
+    <div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-info">Edit</a>
+    <a asp-action="Index" class="btn btn-outline-secondary">Back to list</a>
+</div>
+</div>
