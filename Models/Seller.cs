@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Models
@@ -8,8 +9,14 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        [DataType(DataType.EmailAddress)] // aciona o app de e-mail
         public string Email { get; set; }
+        [Display(Name = "Birth Date")]
+        [DataType(DataType.Date)] // não irá mais aparecer as horas
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")] // inverte dia e mês
         public DateTime BirthDate { get; set; }
+        [Display(Name = "Base Salary")]
+        [DisplayFormat(DataFormatString = "{0:F2}")] // deixa o salário com duas casa decimais
         public double BaseSalary { get; set; }
         public Department Department { get; set; }
         public int DepartmentId { get; set; } // avisa pro EF que não pode ser nulo
