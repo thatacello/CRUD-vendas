@@ -1,10 +1,11 @@
-using System.Threading.Tasks;
-using Estudos_MVC_Udemy_Prof_Nelio_Alves.Data;
+using System;
+using System.Diagnostics;
+using System.Collections.Generic;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Models;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Models.ViewModels;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using Estudos_MVC_Udemy_Prof_Nelio_Alves.Services.Exceptions;
 
 namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Controllers
 {
@@ -39,12 +40,12 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Controllers
         {
             if(id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id not provided" });
             }
             var obj = _sellerService.FindById(id.Value);
             if(obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id not found" });
             }
             return View(obj);
         }
@@ -59,14 +60,56 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Controllers
         {
             if(id == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id not provided" });
             }
             var obj = _sellerService.FindById(id.Value);
             if(obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id not found" });
             }
             return View(obj);
+        }
+        public IActionResult Edit(int? id) // opcional -> evitar erro
+        {
+            if(id == null)
+            {
+                return RedirectToAction(nameof(Error), new { message = "Id not provided" });
+            }
+            var obj = _sellerService.FindById(id.Value);
+            if(obj == null)
+            {
+                return RedirectToAction(nameof(Error), new { message = "Id not found" });
+            }
+            List<Department> departments = _departmentService.FindAll();
+            SellerFormViewModel viewModel = new SellerFormViewModel { Seller = obj, Departments = departments };
+            return View(viewModel);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken] // prevenção de ataques
+        public IActionResult Edit(int id, Seller seller)
+        {
+            if(id != seller.Id)
+            {
+                return RedirectToAction(nameof(Error), new { message = "Id mismatch" });
+            }
+            try
+            {
+                _sellerService.Update(seller);
+                return RedirectToAction(nameof(Index));
+            }
+            catch(ApplicationException e)
+            {   
+                return RedirectToAction(nameof(Error), new { message = e.Message });
+            }
+        }
+        public IActionResult Error(string message)
+        {
+            var viewModel = new ErrorViewModel
+            {
+                Message = message,
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier // macete para pegar o Id interno da requisição
+            };
+            return View(viewModel);
         }
     }
 }

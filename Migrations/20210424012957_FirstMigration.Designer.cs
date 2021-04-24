@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210423202646_BancoDeDados")]
-    partial class BancoDeDados
+    [Migration("20210424012957_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -70,7 +70,7 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<int?>("DepartmentId")
+                    b.Property<int>("DepartmentId")
                         .HasColumnType("int");
 
                     b.Property<string>("Email")
@@ -293,7 +293,9 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Migrations
                 {
                     b.HasOne("Estudos_MVC_Udemy_Prof_Nelio_Alves.Models.Department", "Department")
                         .WithMany("Sellers")
-                        .HasForeignKey("DepartmentId");
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

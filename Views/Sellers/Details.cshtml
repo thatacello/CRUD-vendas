@@ -40,8 +40,10 @@
             @Html.DisplayFor(model => model.Department.Name)
         </dd>
     </dl>
-    <div>
-        <a asp-action="Edit" class="btn btn-outline-info">Edit</a>
+    
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Edit" class="btn btn-outline-info" />
         <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
-    </div>
+    </form>
 </div>

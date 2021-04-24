@@ -4,6 +4,7 @@ using System.Linq;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Data;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Models;
 using Microsoft.EntityFrameworkCore;
+using Estudos_MVC_Udemy_Prof_Nelio_Alves.Services.Exceptions;
 
 namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Services
 {
@@ -34,6 +35,22 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Services
             var obj = _context.Seller.Find(id);
             _context.Seller.Remove(obj);
             _context.SaveChanges();
+        }
+        public void Update(Seller obj)
+        {
+            if(!_context.Seller.Any(x => x.Id == obj.Id))
+            {
+                throw new NotFoundException("Id not found");
+            }
+            try
+            {
+                _context.Update(obj);
+                _context.SaveChanges();
+            }
+            catch(DbUpdateConcurrencyException e) // controlador conversa com a camada de serviço
+            {
+                throw new DbConcurrencyException(e.Message); 
+            }
         }
     }
 }

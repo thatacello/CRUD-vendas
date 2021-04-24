@@ -14422,6 +14422,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Sellers\\Edit.cshtml",
+      "TargetPath": "Views\\Sellers\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tsci\\My Private Documents\\Estudos\\Udemy\\Csharp\\Estudos MVC Udemy Prof Nelio Alves\\Views\\Sellers\\Details.cshtml",
       "TargetPath": "Views\\Sellers\\Details.cshtml",
       "FileKind": "mvc"
