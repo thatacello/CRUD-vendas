@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Data;
 using Estudos_MVC_Udemy_Prof_Nelio_Alves.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Services
 {
@@ -13,9 +15,9 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Services
             _context = context;
         }
         // traz a lista de todos os departamento
-        public List<Department> FindAll()
+        public async Task<List<Department>> FindAllAsync() // é um padrão adotado na linguagem c# colocar o Async no final do método
         {
-            return _context.Department.OrderBy(x => x.Name).ToList();
+            return await _context.Department.OrderBy(x => x.Name).ToListAsync();
         }
         // inserir um novo departamento no banco de dados
         public void Insert(Department obj)
