@@ -33,6 +33,14 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Controllers
         [ValidateAntiForgeryToken] // prevenção de ataques
         public IActionResult Create(Seller seller)
         {
+            // é necessário fazer as validações aqui também
+            // pois caso o JS esteja desabilitado, impedirá de enviar o formulário vazio
+            if(!ModelState.IsValid) // testa de o modelo foi validado
+            {
+                var departments = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller , Departments = departments };
+                return View(viewModel);
+            }
             _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));
         }
@@ -69,6 +77,7 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Controllers
             }
             return View(obj);
         }
+        // quando não tem nenhum Http, o padrão é o HttpGet
         public IActionResult Edit(int? id) // opcional -> evitar erro
         {
             if(id == null)
@@ -88,6 +97,14 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Controllers
         [ValidateAntiForgeryToken] // prevenção de ataques
         public IActionResult Edit(int id, Seller seller)
         {
+            // é necessário fazer as validações aqui também
+            // pois caso o JS esteja desabilitado, impedirá de enviar o formulário vazio
+            if(!ModelState.IsValid) // testa de o modelo foi validado
+            {
+                var departments = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller , Departments = departments };
+                return View(viewModel);
+            }
             if(id != seller.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id mismatch" });

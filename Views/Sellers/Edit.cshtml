@@ -12,6 +12,9 @@
     <div class="col-md-4">
         @* edit do método post *@
         <form asp-action="Edit">
+            @* início validação do formulario html *@
+            <div asp-validation-summary="All" class="text-danger"></div>
+            @* fim validação do formulário html *@
             <input type="hidden" asp-for="Seller.Id">
             <div class="form-group">
                 <label asp-for="Seller.Name" class="control-label"></label>
@@ -41,3 +44,8 @@
         </form>
     </div>
 </div>
+@* início validação do formulario js *@
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+@* fim validação do formulário js *@

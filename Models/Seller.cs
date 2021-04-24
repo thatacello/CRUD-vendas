@@ -8,6 +8,8 @@ namespace Estudos_MVC_Udemy_Prof_Nelio_Alves.Models
     public class Seller
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "{0} required")]
+        [StringLength(60, MinimumLength = 3, ErrorMessage = "{0} size should be between {2} and {1}")] // tamanho máx e mín com msg personalizada, {0} -> nome do atributo
         public string Name { get; set; }
         [DataType(DataType.EmailAddress)] // aciona o app de e-mail
         public string Email { get; set; }
